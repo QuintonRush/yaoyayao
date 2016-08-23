@@ -1,0 +1,14 @@
+{
+    "name": "yaoayao",
+    "options": {
+        "type": "salt",
+        "template": "https://github.com/nowa-webpack/template-salt/archive/master.zip",
+        "npm": "tnpm",
+        "vars": {
+            "__LOCAL__": true
+        },
+        "buildvars": {
+            "__LOCAL__": [ false ]
+        }
+    }
+}
