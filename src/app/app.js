@@ -33,7 +33,7 @@ class App extends React.Component {
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route name="app" path="/" component={App}>
-            <IndexRoute component={PageHome}/>
+            <IndexRoute component={PageButlerList}/>
             <Route path="home" component={PageHome}/>
             <Route path="butler" component={PageButler}/>
             <Route path="comments" component={PageComments}/>

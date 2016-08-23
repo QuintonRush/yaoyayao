@@ -1,7 +1,12 @@
 const Actions = require('./actions');
 const mock = [
     require('./mock1'),
-    require('./mock2')];
+    require('./mock2'),
+    require('./mock3'),
+    require('./mock4'),
+    require('./mock5'),
+    require('./mock6'),
+    require('./mock7'),];
 
 module.exports = Reflux.createStore({
 

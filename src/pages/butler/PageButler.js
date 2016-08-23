@@ -10,7 +10,11 @@ class Butler extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeIndex: 0
+            activeIndex: 0,
+            profile: {},
+            recommendation: {
+                list: []
+            }
         };
     }
 
@@ -44,7 +48,7 @@ class Butler extends React.Component {
         let t = this;
         return (
             <div className="butler">
-                <Gallery images={t.state.banners} lazyLoad={false} showNav={false} auto={true}/>
+                <Gallery images={t.state.banners} lazyLoad={true} showNav={false} auto={true}/>
                 <Tab active={t.state.activeIndex} onChange={t.handleTabSelected.bind(t)}>
                     <Tab.Item title="管家介绍">
                         <div className="butler-profile">
@@ -67,14 +71,14 @@ class Butler extends React.Component {
                                     return (
                                         <div className="item">
                                             <img src={item.img} />
-                                            <div className="desc">
-                                                <span className="title">{item.title}</span>
-                                                <span className="subTitle">{item.subTitle}</span>
-                                            </div>
-                                            <div className="flag">
-                                                <span className="text">已报名</span>
-                                                <span className="number">26</span>
-                                            </div>
+                                            {/*<div className="desc">*/}
+                                                {/*<span className="title">{item.title}</span>*/}
+                                                {/*<span className="subTitle">{item.subTitle}</span>*/}
+                                            {/*</div>*/}
+                                            {/*<div className="flag">*/}
+                                                {/*<span className="text">已报名</span>*/}
+                                                {/*<span className="number">26</span>*/}
+                                            {/*</div>*/}
                                         </div>
                                     );
                                 })
